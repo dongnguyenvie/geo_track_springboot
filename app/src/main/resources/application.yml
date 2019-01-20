@@ -1,0 +1,23 @@
+
+spring:
+  jpa:
+    generate-ddl: true
+    database: POSTGRESQL
+    properties.hibernate.jdbc.lob.non_contextual_creation: true
+    show-sql: true
+    hibernate.ddl-auto: update
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/atten
+    platform: postgres
+    username: postgres
+    password: softlink
+  session.store-type: none
+  jmx.enabled: false
+server.port: 8081
+
+spring.mvc.view.prefix: /
+spring.mvc.view.suffix: .jsp
+
+#url: jdbc:postgresql://localhost:5432/atten-gtts
+#spring.jpa.properties.hibernate.jdbc.time_zone: UTC+07:00
